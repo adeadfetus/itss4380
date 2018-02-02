@@ -21,6 +21,10 @@ where (ac_cost-es_budget) > 0;
 
 --Query 4a
 
+select employee.emp_lname, employee.emp_fname, EMPSKILL.SKILL_ID
+FROM EMPLOYEE
+JOIN EMPSKILL ON EMPLOYEE.EMP_ID = EMPSKILL.EMP_ID;
+
 --Query 4b
 
 
