@@ -22,7 +22,9 @@ where (ac_cost-es_budget) > 0;
 --Query 4a
 
 --Query 4b
-
+select SKILL.SKILL_ID, SKILL.SKILL_DESCRIPTION, COUNT(EMPSKILL.EMP_ID)
+FROM SKILL
+JOIN EMPSKILL ON EMPSKILL.EMP_ID=SKILL.EMP_ID;
 
 --Query 5
 
